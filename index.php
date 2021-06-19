@@ -1,6 +1,13 @@
 <?php 
 require_once 'config.php';
 
+//Model
+require_once SOURCE_BASE . 'models/user.model.php';
+
+//DB
+require_once SOURCE_BASE . 'db/datasource.php';
+require_once SOURCE_BASE . 'db/user.query.php';
+
 require_once SOURCE_BASE . 'partials/header.php';
 
 $rpath = str_replace(BASE_CONTEXT_PATH, '', $_SERVER['REQUEST_URI']);
